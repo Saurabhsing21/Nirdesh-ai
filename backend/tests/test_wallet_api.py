@@ -55,8 +55,8 @@ async def test_wallet_invalid_token_logs_token_safe_rejection(
 ) -> None:
     client, _ = api_client
 
-    monkeypatch.setattr(logging.getLogger("voxloom"), "propagate", True)
-    with caplog.at_level(logging.WARNING, logger="voxloom.auth"):
+    monkeypatch.setattr(logging.getLogger("nirdeshai"), "propagate", True)
+    with caplog.at_level(logging.WARNING, logger="nirdeshai.auth"):
         response = await client.get("/wallet", headers={"Authorization": "Bearer invalid-token"})
 
     assert response.status_code == 401

@@ -25,7 +25,7 @@ class Settings(BaseSettings):
     exa_search_timeout_seconds: float = Field(default=8.0, gt=0, le=60)
     client_tool_timeout_seconds: float = Field(default=12.0, gt=0, le=120)
     resend_api_key: SecretStr | None = None
-    resend_from: str = "VoxLoom <onboarding@resend.dev>"
+    resend_from: str = "Nirdesh AI <onboarding@resend.dev>"
 
     knowledge_rag_enabled: bool = False
     openai_api_key: SecretStr | None = None
@@ -42,8 +42,8 @@ class Settings(BaseSettings):
     jwt_secret: SecretStr = Field(min_length=32)
     jwt_algorithm: str = "HS256"
     jwt_access_ttl_seconds: int = Field(default=86_400, gt=0)
-    jwt_issuer: str = "voxloom"
-    jwt_audience: str = "voxloom-api"
+    jwt_issuer: str = "nirdeshai"
+    jwt_audience: str = "nirdeshai-api"
     otp_ttl_seconds: int = Field(default=600, gt=0)
     otp_max_attempts: int = Field(default=5, ge=1, le=20)
 

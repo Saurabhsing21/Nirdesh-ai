@@ -6,17 +6,17 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /app
 
-RUN addgroup --system voxloom \
-    && adduser --system --ingroup voxloom --home /app voxloom \
+RUN addgroup --system nirdeshai \
+    && adduser --system --ingroup nirdeshai --home /app nirdeshai \
     && mkdir -p /data \
-    && chown -R voxloom:voxloom /app /data
+    && chown -R nirdeshai:nirdeshai /app /data
 
 COPY pyproject.toml ./
 COPY app ./app
 RUN python -m pip install --upgrade pip \
     && python -m pip install .
 
-USER voxloom
+USER nirdeshai
 
 EXPOSE 8000
 

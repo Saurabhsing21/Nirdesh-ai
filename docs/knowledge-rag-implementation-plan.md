@@ -1,13 +1,13 @@
 # Knowledge-base RAG Add-on — Implementation Plan
 
 Status: Implemented and verified; optional live-provider quality smoke remains
-Owner: VoxLoom
+Owner: NirdeshAI
 Last updated: 2026-07-22
 Team validation mode: `subagent`
 
 ## 1. Purpose
 
-Add an optional, user-scoped knowledge base to VoxLoom. Authenticated users can
+Add an optional, user-scoped knowledge base to NirdeshAI. Authenticated users can
 choose an embedding model in the Knowledge page, add trusted documents, search
 their content, and receive voice answers with concise spoken source citations.
 

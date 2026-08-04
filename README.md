@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="frontend/artifacts/logo.png" alt="VoxLoom logo" width="140" />
+  <img src="frontend/artifacts/logo.png" alt="Nirdesh AI logo" width="140" />
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@ Dashboard:
 -->
 
 
-VoxLoom is an instrumented multilingual voice agent built as a sandwich architecture:
+Nirdesh AI is an instrumented multilingual voice agent built as a sandwich architecture:
 streaming speech-to-text feeds a LangGraph-backed text agent, then streaming text-to-speech
 returns PCM audio to the browser. The FastAPI backend owns local voice activity detection,
 endpointing, tools, billing, interruption control, and end-to-end latency instrumentation.
@@ -68,15 +68,15 @@ Clone the repository (or download and extract its source archive), then create t
 file in the **repository root**:
 
 ```bash
-git clone https://github.com/Saurabhsing21/VoxLoom.git
-cd VoxLoom
+git clone https://github.com/Saurabhsing21/NirdeshAI.git
+cd NirdeshAI
 cp .env.example .env
 openssl rand -hex 32
 ```
 
-Open `.env`, paste the generated value into `VOXLOOM_JWT_SECRET`, and add `SARVAM_API_KEY`. Exa,
+Open `.env`, paste the generated value into `NIRDESH_JWT_SECRET`, and add `SARVAM_API_KEY`. Exa,
 Resend, OpenAI, and the knowledge-base integration are optional and can remain disabled. To enable
-knowledge RAG, put the OpenAI key in a separate local file, set `VOXLOOM_OPENAI_API_KEY_FILE` to its
+knowledge RAG, put the OpenAI key in a separate local file, set `NIRDESH_OPENAI_API_KEY_FILE` to its
 absolute path, and set `KNOWLEDGE_RAG_ENABLED=true`.
 Do not commit `.env`; it is ignored by Git.
 
@@ -208,7 +208,7 @@ See [docs/BENCHMARKS.md](docs/BENCHMARKS.md) for cohort definitions and reportin
 
 ## License
 
-VoxLoom is released under [The Unlicense](LICENSE.md), a public-domain dedication with a permissive
+Nirdesh AI is released under [The Unlicense](LICENSE.md), a public-domain dedication with a permissive
 fallback. You may use, copy, modify, publish, distribute, compile, or sell this software for any
 commercial or non-commercial purpose without requesting permission or providing attribution, to the
 extent permitted by law. Third-party packages and assets remain subject to their own licenses.

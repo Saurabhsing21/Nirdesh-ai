@@ -12,7 +12,7 @@ from app.wallet.schemas import (
 )
 from app.wallet.service import RechargeAmountError
 
-logger = logging.getLogger("voxloom.wallet")
+logger = logging.getLogger("nirdeshai.wallet")
 router = APIRouter(prefix="/wallet", tags=["wallet"])
 
 

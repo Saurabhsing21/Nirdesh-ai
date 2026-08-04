@@ -189,7 +189,7 @@ class KnowledgeService:
         model = await self.resolve_model(user_id, provider_id, model_id)
         client = await self._client_for(user_id, provider_id)
         vectors = await client.embed(
-            ["VoxLoom embedding connection test"],
+            ["NirdeshAI embedding connection test"],
             model_id=model.id,
             expected_dimensions=model.dimensions,
         )

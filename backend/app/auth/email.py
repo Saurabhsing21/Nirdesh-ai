@@ -49,8 +49,8 @@ class ResendOtpSender:
                 json={
                     "from": self._sender,
                     "to": [email],
-                    "subject": "Your VoxLoom verification code",
-                    "text": f"Your VoxLoom verification code is {code}. It expires soon.",
+                    "subject": "Your Nirdesh AI verification code",
+                    "text": f"Your Nirdesh AI verification code is {code}. It expires soon.",
                 },
             )
             response.raise_for_status()

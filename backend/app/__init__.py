@@ -1,1 +1,1 @@
-"""VoxLoom backend package."""
+"""NirdeshAI backend package."""

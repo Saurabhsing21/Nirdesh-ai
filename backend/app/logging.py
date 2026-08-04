@@ -25,7 +25,7 @@ def install_token_log_redaction() -> None:
 
 
 def configure_application_logging(level: str) -> None:
-    application_logger = logging.getLogger("voxloom")
+    application_logger = logging.getLogger("nirdeshai")
     application_logger.setLevel(level.upper())
     if not application_logger.handlers:
         handler = logging.StreamHandler()

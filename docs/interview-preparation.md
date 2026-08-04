@@ -1,4 +1,4 @@
-# VoxLoom interview preparation guide
+# NirdeshAI interview preparation guide
 
 Prepared: 2026-07-19
 
@@ -18,7 +18,7 @@ Related source documents:
 
 ### Thirty-second pitch
 
-VoxLoom is a multilingual browser voice agent built with a sandwich architecture: Saaras v3
+NirdeshAI is a multilingual browser voice agent built with a sandwich architecture: Saaras v3
 converts speech to text, a LangGraph-based agent using Sarvam-105B reasons and calls tools, and
 Bulbul v3 streams speech back to the browser. FastAPI owns the real-time session, local Silero VAD,
 endpointing, interruption, metrics, billing, and vendor coordination. The browser captures raw PCM,
@@ -214,7 +214,7 @@ Step by step:
 
 Voice activity detection answers a narrow acoustic question: "Does this short frame probably contain
 speech?" It is not transcription and it does not understand whether a sentence is semantically
-complete. VoxLoom builds silence gating, endpointing, and barge-in policy on top of frame-level VAD.
+complete. NirdeshAI builds silence gating, endpointing, and barge-in policy on top of frame-level VAD.
 
 ### Which VAD is used
 
@@ -663,7 +663,7 @@ Production evolution:
 
 ## 12. Interview Q&A: simple questions
 
-### What is VoxLoom?
+### What is NirdeshAI?
 
 It is a multilingual browser voice agent that can answer questions, search current information, and
 manage browser-local todos. It also includes real-time billing and full latency instrumentation.

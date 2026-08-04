@@ -148,9 +148,9 @@ def test_ws_expired_token_closes_with_4401_and_logs_reason(
         now=datetime.now(UTC) - timedelta(minutes=1),
     )
 
-    monkeypatch.setattr(logging.getLogger("voxloom"), "propagate", True)
+    monkeypatch.setattr(logging.getLogger("nirdeshai"), "propagate", True)
     with (
-        caplog.at_level(logging.WARNING, logger="voxloom.auth"),
+        caplog.at_level(logging.WARNING, logger="nirdeshai.auth"),
         TestClient(app) as client,
         client.websocket_connect(f"/ws/voice?token={expired}") as websocket,
         pytest.raises(WebSocketDisconnect) as closed,

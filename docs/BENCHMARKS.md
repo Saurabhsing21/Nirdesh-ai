@@ -1,6 +1,6 @@
 # Voice latency benchmarks
 
-This report is the reproducible Phase 6 baseline for VoxLoom's sandwich voice architecture. Raw
+This report is the reproducible Phase 6 baseline for NirdeshAI's sandwich voice architecture. Raw
 turn rows are emitted by `backend/scripts/latency_replay.py`; no valid slow turn is removed from a
 reported percentile.
 

@@ -4,7 +4,7 @@ import json
 import logging
 from typing import Any
 
-auth_logger = logging.getLogger("voxloom.auth")
+auth_logger = logging.getLogger("nirdeshai.auth")
 
 
 def log_auth_rejection(

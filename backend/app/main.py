@@ -48,7 +48,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         await database.dispose()
 
     app = FastAPI(
-        title="VoxLoom API",
+        title="NirdeshAI API",
         version="0.1.0",
         lifespan=lifespan,
     )

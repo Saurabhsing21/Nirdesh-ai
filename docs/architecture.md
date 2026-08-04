@@ -1,11 +1,11 @@
-# VoxLoom voice-agent architecture
+# NirdeshAI voice-agent architecture
 
 Status: Phase 0 design for review
 Date: 2026-07-12
 
 ## 1. System in one paragraph
 
-VoxLoom is a multilingual, browser-based voice agent built as a **sandwich
+NirdeshAI is a multilingual, browser-based voice agent built as a **sandwich
 architecture**: speech-to-text (STT) converts the user's audio to text, a
 text-based agent reasons and calls tools, and text-to-speech (TTS) converts the
 answer back to audio. LangChain uses the term sandwich for the modular

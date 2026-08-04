@@ -4,7 +4,7 @@ import json
 import logging
 from typing import Any
 
-voice_logger = logging.getLogger("voxloom.voice")
+voice_logger = logging.getLogger("nirdeshai.voice")
 
 
 def log_voice_event(

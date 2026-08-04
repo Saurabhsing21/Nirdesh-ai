@@ -96,8 +96,8 @@ def test_jwt_round_trip_and_expiry() -> None:
         secret=SECRET,
         algorithm="HS256",
         ttl_seconds=60,
-        issuer="voxloom",
-        audience="voxloom-api",
+        issuer="nirdeshai",
+        audience="nirdeshai-api",
         now=now,
     )
 
@@ -106,8 +106,8 @@ def test_jwt_round_trip_and_expiry() -> None:
             token,
             secret=SECRET,
             algorithm="HS256",
-            issuer="voxloom",
-            audience="voxloom-api",
+            issuer="nirdeshai",
+            audience="nirdeshai-api",
         ).user_id
         == "user-1"
     )
@@ -118,8 +118,8 @@ def test_jwt_round_trip_and_expiry() -> None:
         secret=SECRET,
         algorithm="HS256",
         ttl_seconds=1,
-        issuer="voxloom",
-        audience="voxloom-api",
+        issuer="nirdeshai",
+        audience="nirdeshai-api",
         now=now - timedelta(minutes=1),
     )
     with pytest.raises(ExpiredAccessTokenError):
@@ -127,8 +127,8 @@ def test_jwt_round_trip_and_expiry() -> None:
             expired,
             secret=SECRET,
             algorithm="HS256",
-            issuer="voxloom",
-            audience="voxloom-api",
+            issuer="nirdeshai",
+            audience="nirdeshai-api",
         )
 
 
@@ -139,14 +139,14 @@ def test_jwt_rejects_wrong_secret() -> None:
         secret=SECRET,
         algorithm="HS256",
         ttl_seconds=60,
-        issuer="voxloom",
-        audience="voxloom-api",
+        issuer="nirdeshai",
+        audience="nirdeshai-api",
     )
     with pytest.raises(AccessTokenError):
         decode_access_token(
             token,
             secret="different-secret-that-is-also-long-enough",
             algorithm="HS256",
-            issuer="voxloom",
-            audience="voxloom-api",
+            issuer="nirdeshai",
+            audience="nirdeshai-api",
         )

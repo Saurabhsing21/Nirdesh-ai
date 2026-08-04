@@ -59,7 +59,7 @@ export function CallPage({ session, goWallet, walletBalancePaise }: CallPageProp
     if (status !== "active") return;
     let coached = true;
     try {
-      coached = !!localStorage.getItem("voxloom_coached");
+      coached = !!localStorage.getItem("nirdeshai_coached");
     } catch {
       /* storage unavailable */
     }
@@ -84,7 +84,7 @@ export function CallPage({ session, goWallet, walletBalancePaise }: CallPageProp
 
   function finishCoach() {
     try {
-      localStorage.setItem("voxloom_coached", "1");
+      localStorage.setItem("nirdeshai_coached", "1");
     } catch {
       /* storage unavailable */
     }

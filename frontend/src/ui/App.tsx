@@ -76,8 +76,8 @@ function Skeleton() {
 }
 
 export function App() {
-  const [token, setToken] = useState(() => localStorage.getItem("voxloom_token") ?? "");
-  const [email, setEmail] = useState(() => localStorage.getItem("voxloom_email") ?? "");
+  const [token, setToken] = useState(() => localStorage.getItem("nirdeshai_token") ?? "");
+  const [email, setEmail] = useState(() => localStorage.getItem("nirdeshai_email") ?? "");
   const [page, setPage] = useState<Page>("call");
   const [navCollapsed, setNavCollapsed] = useState(false);
   const [pageLoading, setPageLoading] = useState(false);
@@ -115,8 +115,8 @@ export function App() {
   const handleAuthenticationExpired = useCallback(() => {
     if (authExpirationHandled.current) return;
     authExpirationHandled.current = true;
-    localStorage.removeItem("voxloom_token");
-    localStorage.removeItem("voxloom_email");
+    localStorage.removeItem("nirdeshai_token");
+    localStorage.removeItem("nirdeshai_email");
     setToken("");
     setEmail("");
     setWallet(null);
@@ -198,8 +198,8 @@ export function App() {
 
   function logout() {
     void session.stop();
-    localStorage.removeItem("voxloom_token");
-    localStorage.removeItem("voxloom_email");
+    localStorage.removeItem("nirdeshai_token");
+    localStorage.removeItem("nirdeshai_email");
     setToken("");
     setEmail("");
     setWallet(null);
@@ -224,8 +224,8 @@ export function App() {
           <LoginPage
             onAuthenticated={(newToken, newEmail) => {
               authExpirationHandled.current = false;
-              localStorage.setItem("voxloom_token", newToken);
-              localStorage.setItem("voxloom_email", newEmail);
+              localStorage.setItem("nirdeshai_token", newToken);
+              localStorage.setItem("nirdeshai_email", newEmail);
               window.history.replaceState(null, "", "/");
               setToken(newToken);
               setEmail(newEmail);
@@ -345,7 +345,7 @@ export function App() {
                   whiteSpace: "nowrap",
                 }}
               >
-                Vox<span style={{ color: "#4A6CF7" }}>Loom</span>
+                Nirdesh<span style={{ color: "#4A6CF7" }}>AI</span>
               </div>
             )}
           </div>

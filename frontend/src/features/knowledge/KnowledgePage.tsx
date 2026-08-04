@@ -226,7 +226,7 @@ export function KnowledgePage({ token, pushToast, onAuthenticationExpired }: Pro
         <div style={{ fontSize: 15, fontWeight: 600 }}>Provider API keys</div>
         <div style={{ color: "#6B6B66", fontSize: 12.5, marginTop: 5 }}>
           Bring your own key for OpenAI or Google Gemini. Keys are stored on the
-          VoxLoom server for your account only and are never shown again in full.
+          Nirdesh AI server for your account only and are never shown again in full.
         </div>
         {loading ? (
           <div style={{ color: "#A6A6A0", fontSize: 13, marginTop: 20 }}>Loading providers…</div>
@@ -333,7 +333,7 @@ export function KnowledgePage({ token, pushToast, onAuthenticationExpired }: Pro
             </div>
             <div style={noticeStyle}>
               Privacy: source text and search queries are sent to the selected remote embedding
-              provider. Credentials stay on the VoxLoom server.
+              provider. Credentials stay on the Nirdesh AI server.
             </div>
             {profile?.status === "reindexing" && (
               <div aria-live="polite" style={progressStyle}>

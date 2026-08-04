@@ -7,7 +7,7 @@ export type Todo = {
 
 export type TodoToolName = "todo_add" | "todo_list" | "todo_complete" | "todo_delete";
 
-const STORAGE_KEY = "voxloom_todos";
+const STORAGE_KEY = "nirdeshai_todos";
 
 function isTodo(value: unknown): value is Todo {
   if (typeof value !== "object" || value === null) return false;

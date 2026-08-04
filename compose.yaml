@@ -1,4 +1,4 @@
-name: voxloom
+name: nirdeshai
 
 services:
   backend:
@@ -6,7 +6,7 @@ services:
       context: ./backend
     environment:
       APP_ENV: production
-      CORS_ORIGINS: ${VOXLOOM_PUBLIC_ORIGIN:-http://localhost:8080}
+      CORS_ORIGINS: ${NIRDESH_PUBLIC_ORIGIN:-http://localhost:8080}
       DATABASE_URL: sqlite+aiosqlite:////data/voiceagent.db
       JWT_SECRET_FILE: /run/secrets/jwt_secret
       OPENAI_API_KEY_FILE: /run/secrets/openai_api_key
@@ -34,7 +34,7 @@ services:
     build:
       context: ./frontend
     ports:
-      - "${VOXLOOM_HTTP_PORT:-8080}:80"
+      - "${NIRDESH_HTTP_PORT:-8080}:80"
     networks:
       - edge
     depends_on:
@@ -73,6 +73,6 @@ volumes:
 
 secrets:
   jwt_secret:
-    environment: VOXLOOM_JWT_SECRET
+    environment: NIRDESH_JWT_SECRET
   openai_api_key:
-    file: ${VOXLOOM_OPENAI_API_KEY_FILE:-./deploy/secrets/openai_api_key.empty}
+    file: ${NIRDESH_OPENAI_API_KEY_FILE:-./deploy/secrets/openai_api_key.empty}

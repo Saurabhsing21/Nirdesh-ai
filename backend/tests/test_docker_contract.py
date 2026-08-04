@@ -18,8 +18,8 @@ def test_compose_keeps_backend_and_qdrant_private() -> None:
     environment = os.environ.copy()
     environment.update(
         {
-            "VOXLOOM_JWT_SECRET": "docker-test-secret-that-is-at-least-32-characters",
-            "VOXLOOM_OPENAI_API_KEY": "not-a-live-key",
+            "NIRDESH_JWT_SECRET": "docker-test-secret-that-is-at-least-32-characters",
+            "NIRDESH_OPENAI_API_KEY": "not-a-live-key",
         }
     )
     completed = subprocess.run(

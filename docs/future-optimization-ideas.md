@@ -4,7 +4,7 @@ Last updated: 2026-07-22
 
 ## Goal and current evidence
 
-VoxLoom should feel conversational even though its production path is a
+NirdeshAI should feel conversational even though its production path is a
 pipeline: speech-to-text (Saaras) -> text model (Sarvam) -> text-to-speech
 (Bulbul). This has more independently variable stages than a native
 speech-to-speech model, but it is not a fixed design ceiling. Streaming,
@@ -46,7 +46,7 @@ Relevant primary documentation:
 - [OpenAI voice-agent architectures](https://developers.openai.com/api/docs/guides/voice-agents)
 - [OpenAI Realtime VAD](https://developers.openai.com/api/docs/guides/realtime-vad)
 
-The often-repeated “500 ms” OpenAI figure is not used as an VoxLoom design
+The often-repeated “500 ms” OpenAI figure is not used as an NirdeshAI design
 fact or SLO. Native speech-to-speech can remove explicit STT -> text model ->
 TTS boundaries, but actual latency still depends on endpointing, model/service
 time, network location, buffering, and playback.

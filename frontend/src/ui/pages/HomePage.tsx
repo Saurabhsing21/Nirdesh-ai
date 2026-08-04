@@ -44,7 +44,7 @@ function Logo() {
         <span style={{ width: 2, height: 5, borderRadius: 1, background: "#FFFFFF" }} />
       </div>
       <div style={{ fontSize: 15, fontWeight: 600, letterSpacing: "-0.01em" }}>
-        Vox<span style={{ color: "#4A6CF7" }}>Loom</span>
+        Nirdesh<span style={{ color: "#4A6CF7" }}>AI</span>
       </div>
     </div>
   );
@@ -524,7 +524,7 @@ export function HomePage({ onLogin }: HomePageProps) {
                 animation: "fadeUp 1s ease both",
               }}
             >
-              VoxLoom answers questions, manages your todos, and searches the live web — all
+              Nirdesh AI answers questions, manages your todos, and searches the live web — all
               by voice, in any Indian languages. Sign in, press call, bas boliye.
             </p>
             <div
@@ -833,7 +833,7 @@ export function HomePage({ onLogin }: HomePageProps) {
             color: "#A6A6A0",
           }}
         >
-          <span>© 2026 VoxLoom. All rights reserved.</span>
+          <span>© 2026 Nirdesh AI. All rights reserved.</span>
           <span style={{ fontFamily: MONO, fontSize: 12 }}>Powered by Sarvam Model</span>
         </div>
       </footer>

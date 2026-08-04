@@ -246,7 +246,7 @@ export function LoginPage({ onAuthenticated, pushToast }: LoginPageProps) {
         <div style={{ display: "flex", alignItems: "center", gap: 9 }}>
           <Logo size="small" />
           <div style={{ fontSize: 14, fontWeight: 600, letterSpacing: "-0.01em" }}>
-            Vox<span style={{ color: "#4A6CF7" }}>Loom</span>
+            Nirdesh<span style={{ color: "#4A6CF7" }}>AI</span>
           </div>
         </div>
         <button
@@ -304,7 +304,7 @@ export function LoginPage({ onAuthenticated, pushToast }: LoginPageProps) {
               lineHeight: 1.12,
             }}
           >
-            Vox<span style={{ color: "#4A6CF7" }}>Loom</span> — Bas boliye.
+            Nirdesh<span style={{ color: "#4A6CF7" }}>AI</span> — Bas boliye.
           </h1>
           <p
             style={{
@@ -343,7 +343,7 @@ export function LoginPage({ onAuthenticated, pushToast }: LoginPageProps) {
               letterSpacing: "-0.01em",
             }}
           >
-            Sign in to Vox<span style={{ color: "#4A6CF7" }}>Loom</span>
+            Sign in to Nirdesh<span style={{ color: "#4A6CF7" }}>AI</span>
           </div>
 
           {!otpStep && (
@@ -522,7 +522,7 @@ export function LoginPage({ onAuthenticated, pushToast }: LoginPageProps) {
           position: "relative",
         }}
       >
-        Powered by Sarvam Model · © 2026 VoxLoom
+        Powered by Sarvam Model · © 2026 Nirdesh AI
       </div>
     </div>
   );

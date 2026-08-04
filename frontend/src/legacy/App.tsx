@@ -61,7 +61,7 @@ export function App() {
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");
   const [otpRequested, setOtpRequested] = useState(false);
-  const [token, setToken] = useState(() => localStorage.getItem("voxloom_token") ?? "");
+  const [token, setToken] = useState(() => localStorage.getItem("nirdeshai_token") ?? "");
   const [callActive, setCallActive] = useState(false);
   const [agentState, setAgentState] = useState("idle");
   const [transcript, setTranscript] = useState("");
@@ -108,7 +108,7 @@ export function App() {
     setError("");
     try {
       const accessToken = await verifyOtp(email, otp);
-      localStorage.setItem("voxloom_token", accessToken);
+      localStorage.setItem("nirdeshai_token", accessToken);
       setToken(accessToken);
     } catch (verifyError) {
       setError(String(verifyError));
@@ -169,7 +169,7 @@ export function App() {
 
   function logout() {
     void stopCall();
-    localStorage.removeItem("voxloom_token");
+    localStorage.removeItem("nirdeshai_token");
     setToken("");
   }
 
@@ -177,7 +177,7 @@ export function App() {
     const client = clientRef.current;
     clientRef.current = null;
     void client?.stop();
-    localStorage.removeItem("voxloom_token");
+    localStorage.removeItem("nirdeshai_token");
     setToken("");
     setCallActive(false);
     setAgentState("idle");
@@ -199,7 +199,7 @@ export function App() {
   if (!token) {
     return (
       <main>
-        <h1>VoxLoom Phase 4</h1>
+        <h1>NirdeshAI Phase 4</h1>
         <form onSubmit={handleRequestOtp}>
           <label>
             Email
@@ -234,7 +234,7 @@ export function App() {
 
   return (
     <main>
-      <h1>VoxLoom Phase 4</h1>
+      <h1>NirdeshAI Phase 4</h1>
       <p>State: {agentState}</p>
       <p>Wallet balance: {balancePaise == null ? "loading" : `${balancePaise} paise`}</p>
       <p>Current session cost: {sessionCostPaise} paise</p>

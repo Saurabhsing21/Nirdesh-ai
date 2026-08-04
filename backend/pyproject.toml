@@ -3,9 +3,9 @@ requires = ["setuptools>=75"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "voxloom-backend"
+name = "nirdeshai-backend"
 version = "0.1.0"
-description = "FastAPI backend for the VoxLoom voice agent"
+description = "FastAPI backend for the NirdeshAI voice agent"
 requires-python = ">=3.11"
 dependencies = [
     "aiosqlite>=0.20,<1",
