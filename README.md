@@ -1,9 +1,14 @@
+<h1 align="center">Nirdesh AI</h1>
+
 <p align="center">
-  <img src="frontend/artifacts/logo.png" alt="Nirdesh AI logo" width="140" />
+  <strong>Ask questions, manage todos, search the web — all by voice.</strong>
 </p>
 
 <p align="center">
-  <strong>Ask questions, manage todos, search the web - all by voice.</strong>
+  <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-Unlicense-blue.svg" alt="License: Unlicense"></a>
+  <img src="https://img.shields.io/badge/backend-FastAPI-009688" alt="FastAPI">
+  <img src="https://img.shields.io/badge/agent-LangGraph-1C3C3C" alt="LangGraph">
+  <img src="https://img.shields.io/badge/voice-Sarvam-orange" alt="Sarvam">
 </p>
 
 <p align="center">
@@ -19,6 +24,7 @@ Watch demo:
 Dashboard:
 -->
 
+---
 
 Nirdesh AI is an instrumented multilingual voice agent built as a sandwich architecture:
 streaming speech-to-text feeds a LangGraph-backed text agent, then streaming text-to-speech
@@ -28,8 +34,8 @@ endpointing, tools, billing, interruption control, and end-to-end latency instru
 ![Demo](frontend/artifacts/image.png)
 
 ## Architecture
-![Demo](frontend/artifacts/Architecture.png)
 
+![Architecture](frontend/artifacts/Architecture.png)
 
 The browser and FastAPI server communicate over one authenticated WebSocket. Microphone audio
 is raw 16 kHz PCM16 with browser capture sequence and timing headers. The backend runs Silero VAD
@@ -78,6 +84,7 @@ Open `.env`, paste the generated value into `NIRDESH_JWT_SECRET`, and add `SARVA
 Resend, OpenAI, and the knowledge-base integration are optional and can remain disabled. To enable
 knowledge RAG, put the OpenAI key in a separate local file, set `NIRDESH_OPENAI_API_KEY_FILE` to its
 absolute path, and set `KNOWLEDGE_RAG_ENABLED=true`.
+
 Do not commit `.env`; it is ignored by Git.
 
 Build and start the complete application:
