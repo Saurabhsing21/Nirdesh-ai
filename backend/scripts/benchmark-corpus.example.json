@@ -1,0 +1,41 @@
+{
+  "corpus_id": "replace-with-recorded-corpus-id",
+  "cases": [
+    {
+      "case_id": "en-short-question",
+      "path": "/absolute/path/to/english-16khz-pcm16.wav",
+      "language": "en-IN",
+      "tags": ["short-question", "clean"]
+    },
+    {
+      "case_id": "hi-hesitation",
+      "path": "/absolute/path/to/hindi-16khz-pcm16.wav",
+      "language": "hi-IN",
+      "tags": ["hesitation", "indic"]
+    },
+    {
+      "case_id": "ta-list-dictation",
+      "path": "/absolute/path/to/tamil-16khz-pcm16.wav",
+      "language": "ta-IN",
+      "tags": ["list-dictation", "indic"]
+    },
+    {
+      "case_id": "en-background-noise",
+      "path": "/absolute/path/to/english-noisy-16khz-pcm16.wav",
+      "language": "en-IN",
+      "tags": ["short-question", "background-noise"]
+    },
+    {
+      "case_id": "hi-code-mixing",
+      "path": "/absolute/path/to/hindi-english-code-mix-16khz-pcm16.wav",
+      "language": "hi-IN",
+      "tags": ["code-mixing", "indic"]
+    },
+    {
+      "case_id": "ta-number-dictation",
+      "path": "/absolute/path/to/tamil-numbers-16khz-pcm16.wav",
+      "language": "ta-IN",
+      "tags": ["number-dictation", "indic"]
+    }
+  ]
+}
